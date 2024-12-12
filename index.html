@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- This is Table part -->
+    <div>
+      <h1 class="heading">Example Of Table</h1>
+      <table class="table">
+        <tr>
+          <td>SL</td>
+          <td>Name</td>
+          <td>Usage</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Javascript</td>
+          <td>Web Development</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Python</td>
+          <td>Matching Learning</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Java</td>
+          <td rowspan="2">Game Development</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>C#</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Swift</td>
+          <td rowspan="2">IOS App Development</td>
+        </tr>
+      </table>
+    </div>
+    <!-- this is List part -->
+    <h1 class="heading">Example Of Unordered & Ordered List</h1>
+    <div id="listStyle">
+      <div>
+        <ul>
+          <li>HTML</li>
+          <li>
+            CSS
+            <ul>
+              <li>Tailwind</li>
+              <li>Bootstrap</li>
+              <li>Material UI</li>
+            </ul>
+          </li>
+          <li>
+            Javascript
+            <ul>
+              <li>React</li>
+              <li>Angular</li>
+              <li>Veu</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ordered List -->
+      <div>
+        <ol style="list-style-type: upper-roman">
+          <li>Next JS</li>
+          <li>
+            Database
+            <ol>
+              <li>Atlas</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Postman</li>
+            </ol>
+          </li>
+          <li>
+            Node JS
+            <ol>
+              <li>Express JS</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <h1 class="heading">Example Of A Description List</h1>
+      <dl class="dList">
+        <dt>
+          Best Website for Learning Programming Language <br />
+          click below
+        </dt>
+        <a
+          target="_blank"
+          style="text-decoration: none"
+          href="https://www.w3schools.com/"
+          ><dd>- W3 Schools</dd></a
+        >
+        <a
+          target="_blank"
+          style="text-decoration: none"
+          href="https://auth.freecodecamp.org"
+          ><dd>-Free Code Campers</dd></a
+        >
+        <a
+          target="_blank"
+          style="text-decoration: none"
+          href="https://www.coursera.org/"
+          ><dd>- Coursera</dd></a
+        >
+        <a
+          target="_blank"
+          style="text-decoration: none"
+          href="https://www.udemy.com/"
+          ><dd>- Udemy</dd></a
+        >
+      </dl>
+    </div>
+    <!-- Example Of Form -->
+    <h1 class="heading">Example of Form</h1>
+    <div style="display: flex; justify-content: center">
+      <form
+        style="
+          background-color: rgb(65, 151, 151);
+          display: inline-block;
+          margin: auto;
+          padding: 30px;
+          border-radius: 10px;
+          font-size: 20px;
+          font-style: italic;
+        "
+        action=""
+      >
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="name" id="name" />
+        <br /><br />
+        <label for="email">Enter Your Email</label>
+        <input type="email" name="email" id="email" />
+        <br /><br />
+        <label for="email">Select a Language</label>
+        <input
+          type="checkbox"
+          id="javascript"
+          name="select_language"
+          value="Javascript"
+        />
+        <label for="javascript"> Javascript</label>
+        <input
+          type="checkbox"
+          id="python"
+          name="select_language"
+          value="Python"
+        />
+        <label for="python"> Python</label>
+        <br /><br />
+        <label for="number">Enter Your Age</label>
+        <input type="number" name="number" id="number" />
+        <br /><br />
+        <label for="number">Enter Your Gender :</label>
+        <label for="html">Male</label>
+        <input type="radio" id="male" name="male" value="male" />
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="Female" value="Female" />
+        <br /><br />
+        <h4>Give some feedback :</h4>
+        <textarea
+          style="border-radius: 10px"
+          name="email"
+          rows="10"
+          cols="30"
+        ></textarea>
+        <br /><br />
+        <button
+          style="
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: rgb(230, 67, 8);
+          "
+          type="button"
+          onclick="alert('submitted successfully')"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
